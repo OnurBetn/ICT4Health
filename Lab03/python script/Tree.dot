@@ -1,0 +1,17 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=<'hemo' &le; 12.95<br/>entropy = 0.998<br/>samples = 304<br/>value = [144, 160]<br/>class = ckd>, fillcolor="#399de519"] ;
+1 [label=<entropy = 0.0<br/>samples = 139<br/>value = [0, 139]<br/>class = ckd>, fillcolor="#399de5ff"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<'sg' &le; 1.017<br/>entropy = 0.55<br/>samples = 165<br/>value = [144, 21]<br/>class = not ckd>, fillcolor="#e58139da"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label=<entropy = 0.0<br/>samples = 19<br/>value = [0, 19]<br/>class = ckd>, fillcolor="#399de5ff"] ;
+2 -> 3 ;
+4 [label=<'al' &le; 0.5<br/>entropy = 0.104<br/>samples = 146<br/>value = [144, 2]<br/>class = not ckd>, fillcolor="#e58139fb"] ;
+2 -> 4 ;
+5 [label=<entropy = 0.0<br/>samples = 144<br/>value = [144, 0]<br/>class = not ckd>, fillcolor="#e58139ff"] ;
+4 -> 5 ;
+6 [label=<entropy = 0.0<br/>samples = 2<br/>value = [0, 2]<br/>class = ckd>, fillcolor="#399de5ff"] ;
+4 -> 6 ;
+}
